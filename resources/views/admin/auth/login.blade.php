@@ -70,6 +70,7 @@
       	font-feature-settings: "cv03", "cv04", "cv11";
       }
     </style>
+    @vite(['resources/js/admin/login.js'])
   </head>
   <body  class=" d-flex flex-column">
     <script src="{{ asset('admin/assets/dist/js/demo-theme.min.js?1692870487')}}"></script>
@@ -98,8 +99,8 @@
                   </span>
                 </label>
                 <div class="input-group input-group-flat">
-                  <input type="password" class="form-control" name="password"  placeholder="Your password"  autocomplete="off" required>
-                  <span class="input-group-text">
+                  <input type="password" class="form-control password" name="password"  placeholder="Your password"  autocomplete="off" required>
+                  <span class="input-group-text toggle-password">
                     <a href="#" class="link-secondary" title="Show password" data-bs-toggle="tooltip"><!-- Download SVG icon from http://tabler-icons.io/i/eye -->
                       <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
                     </a>
