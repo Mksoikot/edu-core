@@ -9,6 +9,6 @@ class FrontendController extends Controller
 {
     function index()
     {
-        return view('frontend.layouts.master'); // Assuming you have a view named 'frontend.index'
+        return view('frontend.pages.home'); // Assuming you have a view named 'frontend.index'
     }
 }
